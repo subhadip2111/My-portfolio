@@ -1,0 +1,16 @@
+/* Reset default styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+}
+
+/* Apply styles to the entire body */
+body {
+  background: rgb(30, 30, 30);
+  color: white;
+  overflow: hidden; /* Hide any content that overflows the viewport */
+  overflow-y: scroll; /* Add vertical scrollbar if content overflows */
+}

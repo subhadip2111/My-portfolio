@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222; /* Dark background color */
+}
+
+.logo {
+  width: 100px; /* Adjust as needed */
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+}
+
+.desktopMenuListItem {
+  margin: 0 1.5rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.desktopMenuListItem:hover {
+  color: #64ffda; /* Aqua blue on hover */
+}
+
+.desktopMenuBtn {
+  background-color: #64ffda; /* Aqua blue button background */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.desktopMenuBtn:hover {
+  background-color: #80e8c2; /* Slightly lighter aqua blue on hover */
+}
+
+.desktopImg {
+  width: 20px; /* Adjust icon size */
+  margin-right: 0.5rem;
+}
