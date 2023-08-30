@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "./intro.css";
 import { Link } from "react-scroll";
 import btn from "../../assets/hireme.png";
 
 const Intro = () => {
   const [typingText, setTypingText] = useState("");
-  const textArray = [
-    "Web Developer",
-    "Passionate about React.js",
-    "Crafting engaging web experiences",
-    "With a touch of innovation and code",
-  ];
+   const textArray = useMemo(
+     () => [
+       "Web Developer",
+       "Passionate about React.js",
+       "Crafting engaging web experiences",
+       "With a touch of innovation and code",
+     ],
+     []
+   );
   const typingSpeed = 100; // Adjust the typing speed in milliseconds
 
   useEffect(() => {
@@ -54,7 +57,7 @@ const Intro = () => {
     };
 
     type();
-  },[]);
+  },[textArray]);
 
   return (
     <section id="intro">
