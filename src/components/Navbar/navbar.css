@@ -46,3 +46,7 @@
   width: 20px; /* Adjust icon size */
   margin-right: 0.5rem;
 }
+.active{
+color:yellow;
+
+}

@@ -1,8 +1,10 @@
 import React from "react";
 import "./skill.css";
+//import resumePdf from "./resumed.pdf";
 
-//import webdeveloper from "../../assets/website-design.png"
 const Skill = () => {
+
+  const resumeUrl = "https://drive.google.com/file/d/1GwXY2G-WgxNpSqsA4Bu635uyPH6g0ld9/view?usp=drive_link";
   return (
     <section id="skills">
       <h2 className="skillTitle">My Expertise</h2>
@@ -41,6 +43,11 @@ const Skill = () => {
         <p className="skill">
           <i className="icon">🤖</i> GPT and Chatbots
         </p>
+      </div>
+      <div className="downloadButton">
+        <a href={resumeUrl} download="resumed.pdf" className="resumeLink">
+          Download Resume
+        </a>
       </div>
     </section>
   );

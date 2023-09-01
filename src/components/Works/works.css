@@ -1,46 +1,40 @@
 #works {
   padding: 4rem 0;
-  background-color: #f5f5f5; /* Light background */
+  background-color: black;
   text-align: center;
 }
-
-
-
 
 .workImageContainer {
   display: flex;
   overflow-x: auto;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #333333; /* Dark gray border */
 }
-
-
 
 .worksTitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #333333; /* Dark gray */
+  color: #e74c3c; /* Red text */
+  margin-bottom: 1.5rem;
 }
 
-/* Additional styles for description or intro text if needed */
 .workDescriptions {
   display: block;
   margin: 1rem 0 3rem;
   font-size: 1.2rem;
-  color: #777777; /* Gray */
+  color: #bbb; /* Light gray text */
 }
 
 .workImage {
-  display: flex; /* Change from grid to flex for row layout */
-  flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
-  justify-content: space-between; /* Distribute images evenly */
-  gap: 1rem; /* Gap between images */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
   margin-top: 2rem;
 }
 
 .workImg {
-  max-width: 150px; /* Adjust the size as needed */
+  max-width: 100%;
   height: auto;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -48,10 +42,22 @@
   cursor: pointer;
 }
 
-/* Add hover effect if desired */
-.workImg:hover {
-  transform: scale(1.05);
+.workbutton {
+  margin: 2rem auto;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #3498db; /* Blue button */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.workbutton:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
 .workImg:hover {
   transform: scale(1.05);
 }
@@ -59,13 +65,6 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .workImage {
-    flex-wrap: nowrap; /* Prevent images from wrapping in small screens */
-    overflow-x: auto; /* Add horizontal scroll for small screens */
-    gap: 0.5rem; /* Reduce gap between images */
-  }
-
-  .workImg {
-    flex-basis: calc(50% - 0.5rem); /* Calculate 50% width minus gap */
-    max-width: 50%; /* Smaller max-width for small screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }

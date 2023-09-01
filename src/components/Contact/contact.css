@@ -1,0 +1,119 @@
+#contactPage {
+  padding: 4rem 0;
+  background-color: black; /* Black background */
+  text-align: center;
+}
+
+.contactPagetitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e74c3c; /* Red text */
+  margin-bottom: 1.5rem;
+}
+
+.clientsDescription {
+  font-size: 1.2rem;
+  color: #ddd; /* Light gray text */
+  margin-bottom: 3rem;
+}
+
+.clientImgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.clientImg {
+  max-width: 120px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.clientImg:hover {
+  filter: none;
+}
+
+#contact {
+  margin-top: 4rem;
+}
+
+.contactPageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3498db; /* Blue text */
+  margin-bottom: 1rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.name,
+.email,
+.msg {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #333; /* Dark gray background */
+  color: #fff; /* White text */
+}
+
+.msg {
+  resize: vertical;
+}
+
+.submitBtn {
+  background-color: #2ecc71; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.links img {
+  max-width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.links img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .clientImgs {
+    flex-direction: column;
+  }
+
+  .clientImg {
+    max-width: 80%;
+    margin: 0.5rem auto;
+  }
+  
+  .contactForm {
+    max-width: 100%;
+  }
+}

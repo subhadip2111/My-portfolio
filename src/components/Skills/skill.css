@@ -1,19 +1,20 @@
+/* skill.css */
+
 #skills {
-  padding: 4rem 0;
-  background-color: #121212; /* Dark background */
   text-align: center;
+  padding: 60px 0;
+  background-color: #1a1a1a; /* Background color for the skills section */
+  color: #fff;
 }
 
 .skillTitle {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #64ffda; /* Aqua blue */
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .skillDescription {
-  font-size: 1.2rem;
-  margin: 1rem 0 3rem;
-  color: #b0bec5; /* Light gray */
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .skillList {
@@ -23,53 +24,33 @@
 }
 
 .skill {
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #1e1e1e; /* Dark gray */
-  color: #ffffff; /* White text color */
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 10px 20px;
+  background-color: #333; /* Background color for skill items */
   border-radius: 5px;
-  font-size: 1rem;
-  position: relative;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
 }
 
-.skill i {
-  margin-right: 0.5rem;
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
 }
 
-.skill:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  animation: blink 1.5s infinite alternate;
-  z-index: -1;
+.resumeLink {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff; /* Button background color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px; /* Increase the font size to make the button larger */
+  transition: background-color 0.3s ease;
 }
 
-@keyframes blink {
-  0% {
-    transform: translateZ(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(15px);
-    opacity: 1;
-  }
-}
-
-.skill:hover:before {
-  animation: none; /* Stop animation on hover */
-}
-
-.skill.animated {
-  transition: transform 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-
-.skill.animated:hover {
-  transform: translateZ(10px) rotateX(10deg);
-  background-color: #64ffda; /* Aqua blue */
-  color: #121212; /* Dark background */
+.resumeLink:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }

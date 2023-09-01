@@ -1,0 +1,34 @@
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px 0; /* Padding around footer content */
+  text-align: center; /* Center-align the content */
+}
+
+.footer-container {
+  max-width: 1200px; /* Limit the width of the footer content */
+  margin: 0 auto; /* Center-align the content horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  font-size: 24px; /* Icon size */
+  margin-bottom: 10px; /* Spacing between social media icons and text */
+}
+
+.social-media a {
+  color: #fff; /* Color for social media icons */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 10px; /* Spacing between icons */
+}
+
+.social-media a:hover {
+  color: #007bff; /* Color on hover (adjust to your preference) */
+}
+
+.copyright {
+  font-size: 14px; /* Text size for copyright */
+}

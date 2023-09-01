@@ -1,0 +1,7 @@
+import emailjs from "emailjs-com";
+
+const EMAIL_JS_USER_ID = "service_jxr84c8"; // Replace with your actual Email.js User ID
+
+emailjs.init(EMAIL_JS_USER_ID);
+
+export default emailjs;
