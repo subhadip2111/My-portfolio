@@ -1,3 +1,5 @@
+/* navbar.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -21,6 +23,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .desktopMenuListItem:hover {
@@ -46,7 +49,43 @@
   width: 20px; /* Adjust icon size */
   margin-right: 0.5rem;
 }
-.active{
-color:yellow;
 
+/* Add active class for the currently active link */
+.active {
+  color: yellow;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  /* Mobile menu styles */
+  .mobileMenuIcon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .mobileMenuList {
+    list-style: none;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    display: none;
+  }
+
+  .mobileMenuListItem {
+    padding: 1rem 0;
+  }
+
+  .mobileMenuActive {
+    display: block;
+  }
 }

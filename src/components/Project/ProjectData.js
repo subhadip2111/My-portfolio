@@ -25,7 +25,8 @@ import Gamevideo from "./Captures/game.mp4";
       description:
         "Create a Swiggy clone, a popular online food ordering and delivery platform, to practice building a full-stack web application. This project will be implemented using React for the frontend, Redux for state management, and Tailwind CSS for styling.",
       demoLink: "https://rasoyfood.netlify.app/",
-      images: [home,About1, Cart, AboutME, contact, Login, RestraunatMenu],
+      githubLink: "https://github.com/subhadip2111/Swigy.git",
+      images: [home, About1, Cart, AboutME, contact, Login, RestraunatMenu],
       video: FoodVideos,
     },
     {
@@ -33,6 +34,7 @@ import Gamevideo from "./Captures/game.mp4";
       name: "Youtube-clone",
       description:
         "Build a YouTube clone, a popular video-sharing platform, to gain practical experience in building a full-stack web application. This project will be implemented using React for the frontend, Redux for state management, and Tailwind CSS for styling.",
+      githubLink: "https://github.com/subhadip2111/YouTube.git",
       images: [YoutubeHome, youtubeVideo],
       video: YoutubeVideo,
     },
@@ -42,6 +44,7 @@ import Gamevideo from "./Captures/game.mp4";
       description:
         "This is a simple Tic-Tac-Toe game. See the match history and winner message.",
       demoLink: "https://titactogame.netlify.app/",
+      githubLink: "https://github.com/subhadip2111/tik-tacto-game.git",
       images: [GameHome, GameHistory],
       video: Gamevideo,
     },

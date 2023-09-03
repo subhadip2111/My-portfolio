@@ -1,12 +1,13 @@
 // ProjectDetail.js
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import ProjectsData from "./ProjectData"; // Your project data
 import "./projectDetails.css"
 const ProjectDetail = () => {
-    const { projectId } = useParams();
-    
-    console.log(projectId);
+  const { projectId } = useParams();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const project = ProjectsData.find(
     (project) => project.id === parseInt(projectId)
   );
@@ -14,6 +15,16 @@ const ProjectDetail = () => {
   if (!project) {
     return <div>Project not found.</div>;
   }
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    setModalOpen(false);
+  };
 
   return (
     <div className="project-detail-container">
@@ -40,7 +51,11 @@ const ProjectDetail = () => {
       <h3>Images</h3>
       <div className="project-images">
         {project.images.map((image, index) => (
-          <div className="project-image-card" key={index}>
+          <div
+            className="project-image-card"
+            key={index}
+            onClick={() => openModal(image)}
+          >
             <img src={image} alt={`Screenshot ${index + 1}`} />
           </div>
         ))}
@@ -52,8 +67,18 @@ const ProjectDetail = () => {
           Your browser does not support the video tag.
         </video>
       </div>
+
+      {modalOpen && (
+        <div className="modal" onClick={closeModal}>
+          <span className="close-button">&times;</span>
+          <img
+            src={selectedImage}
+            alt="Zoomed Imag"
+            className="modal-content"
+          />
+        </div>
+      )}
     </div>
   );
 };
-
 export default ProjectDetail;

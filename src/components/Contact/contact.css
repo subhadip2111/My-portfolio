@@ -117,3 +117,36 @@
     max-width: 100%;
   }
 }
+./* Existing CSS styles for other elements in your contact component */
+
+/* Style for the success popup */
+.successPopup {
+  position: fixed;
+  top: 50%; /* Adjusted top position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50; /* Changed background color to green */
+  color: #fff; /* Text color */
+  border: 1px solid #4CAF50; /* Border color */
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1000;
+}
+
+.successPopup p {
+  font-size: 18px; /* Larger font size for a more prominent message */
+  margin-bottom: 15px;
+}
+
+.successPopup button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px; /* Slightly larger font size for the button */
+  margin-top: 10px;
+}
+
+/* Additional styles for close button or other customizations can be added here */
