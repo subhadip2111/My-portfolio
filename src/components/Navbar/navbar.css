@@ -45,7 +45,8 @@
 }
 
 .desktopImg {
-  width: 20px; /* Adjust icon size */
+ width: 15px; /* Adjust the width to your desired size */
+  height: 25px; /* Adjust the height to your desired size */
   margin-right: 0.5rem;
 }
 
