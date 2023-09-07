@@ -4,7 +4,8 @@ import "./skill.css";
 
 const Skill = () => {
 
-  const resumeUrl = "https://drive.google.com/file/d/1GwXY2G-WgxNpSqsA4Bu635uyPH6g0ld9/view?usp=drive_link";
+  const resumeUrl =
+    "https://drive.google.com/file/d/1HAlwnFydUN-OG5Al6PeZve2HzNW84ccR/view?usp=sharing";
   return (
     <section id="skills">
       <h2 className="skillTitle">My Expertise</h2>
