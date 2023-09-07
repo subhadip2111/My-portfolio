@@ -1,5 +1,4 @@
-/* navbar.css */
-
+/* Common styles for all screen sizes */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -50,42 +49,47 @@
   margin-right: 0.5rem;
 }
 
-/* Add active class for the currently active link */
-.active {
-  color: yellow;
+/* Mobile Menu Toggle Icon */
+.mobileMenuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-/* Media queries for responsiveness */
+/* Mobile Menu Styles */
+.mobileMenuList {
+  list-style: none;
+  background-color: #222;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  display: none;
+}
 
+.mobileMenuListItem {
+  padding: 1rem 0;
+}
+
+.mobileMenuActive {
+  display: block;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .desktopMenu {
     display: none;
   }
 
-  /* Mobile menu styles */
+  /* Display the mobile menu toggle icon on small screens */
   .mobileMenuIcon {
     display: block;
-    font-size: 24px;
-    cursor: pointer;
   }
 
-  .mobileMenuList {
-    list-style: none;
-    background-color: #222;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    display: none;
-  }
-
-  .mobileMenuListItem {
-    padding: 1rem 0;
-  }
-
-  .mobileMenuActive {
-    display: block;
+  /* Adjust padding for the mobile menu */
+  .navbar {
+    padding: 1rem;
   }
 }

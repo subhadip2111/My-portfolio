@@ -170,3 +170,30 @@
 }
 
 /* Add more CSS styles as needed for other elements in your component */
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 10px;
+  }
+
+  .project-detail-container h2 {
+    font-size: 24px;
+  }
+
+  .project-detail-container p {
+    font-size: 16px;
+  }
+
+  .link-button {
+    margin-right: 10px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+
+  .project-detail-container h3 {
+    font-size: 20px;
+  }
+
+  .project-image-card {
+    flex-basis: calc(50% - 10px);
+  }
+}

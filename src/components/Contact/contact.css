@@ -1,19 +1,20 @@
+/* Common styles for all screen sizes */
 #contactPage {
   padding: 4rem 0;
-  background-color: black; /* Black background */
+  background-color: black;
   text-align: center;
 }
 
 .contactPagetitle {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #e74c3c; /* Red text */
+  color: #e74c3c;
   margin-bottom: 1.5rem;
 }
 
 .clientsDescription {
   font-size: 1.2rem;
-  color: #ddd; /* Light gray text */
+  color: #ddd;
   margin-bottom: 3rem;
 }
 
@@ -43,7 +44,7 @@
 .contactPageTitle {
   font-size: 2rem;
   font-weight: bold;
-  color: #3498db; /* Blue text */
+  color: #3498db;
   margin-bottom: 1rem;
 }
 
@@ -61,8 +62,8 @@
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #333; /* Dark gray background */
-  color: #fff; /* White text */
+  background-color: #333;
+  color: #fff;
 }
 
 .msg {
@@ -70,7 +71,7 @@
 }
 
 .submitBtn {
-  background-color: #2ecc71; /* Green button */
+  background-color: #2ecc71;
   color: white;
   border: none;
   border-radius: 5px;
@@ -80,7 +81,7 @@
 }
 
 .submitBtn:hover {
-  background-color: #27ae60; /* Darker green on hover */
+  background-color: #27ae60;
 }
 
 .links {
@@ -106,47 +107,23 @@
 @media (max-width: 768px) {
   .clientImgs {
     flex-direction: column;
+    align-items: center;
   }
 
   .clientImg {
     max-width: 80%;
     margin: 0.5rem auto;
   }
-  
+
   .contactForm {
     max-width: 100%;
   }
-}
-./* Existing CSS styles for other elements in your contact component */
 
-/* Style for the success popup */
-.successPopup {
-  position: fixed;
-  top: 50%; /* Adjusted top position */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #4CAF50; /* Changed background color to green */
-  color: #fff; /* Text color */
-  border: 1px solid #4CAF50; /* Border color */
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  z-index: 1000;
-}
+  .contactPageTitle {
+    font-size: 1.5rem;
+  }
 
-.successPopup p {
-  font-size: 18px; /* Larger font size for a more prominent message */
-  margin-bottom: 15px;
+  .contactPagetitle {
+    font-size: 2rem;
+  }
 }
-
-.successPopup button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px; /* Slightly larger font size for the button */
-  margin-top: 10px;
-}
-
-/* Additional styles for close button or other customizations can be added here */

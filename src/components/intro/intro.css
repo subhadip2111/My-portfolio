@@ -1,45 +1,49 @@
+/* Common styles for all screen sizes */
 #intro {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Adjust for small screens */
+  justify-content: center;
   align-items: center;
-  padding: 4rem;
-  background-color: #3a3a3a; /* Dark gray background */
+  padding: 2rem; /* Reduced padding for small screens */
+  background-color: #3a3a3a;
+  text-align: center;
 }
 
 .introContent {
-  max-width: 50%;
+  max-width: 80%; /* Increased max-width for small screens */
   padding: 1rem;
-  color: #ffffff; /* White text color */
+  color: #ffffff;
+  text-align: center; /* Center text for small screens */
 }
 
 .hello {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Adjusted font size for small screens */
   font-weight: bold;
-  color: #ff6b6b; /* Coral red */
+  color: #ff6b6b;
 }
 
 .introText {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #ffffff; /* White text color */
+  color: #ffffff;
 }
 
 .introName {
-  color: #64ffda; /* Aqua blue */
+  color: #64ffda;
 }
 
 .introPara {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Adjusted font size for small screens */
   margin-top: 1rem;
-  color: #b0bec5; /* Light gray text color */
+  color: #b0bec5;
 }
 
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.8rem 1.5rem;
-  background-color: #64ffda; /* Aqua blue */
-  color: #ffffff; /* White text color */
+  background-color: #64ffda;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -53,88 +57,36 @@
 }
 
 .btn:hover {
-  background-color: #80e8c2; /* Slightly lighter aqua blue */
+  background-color: #80e8c2;
 }
 
 img {
-  width: 50%;
-  max-width: 300px;
+  max-width: 100%; /* Adjusted image size for small screens */
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.introName {
-  color: #64ffda;
-}
 
-.introText {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 0.15em solid #64ffda; /* Typing cursor */
-  white-space: nowrap;
-  letter-spacing: 0.15em; /* Adjust letter spacing for typing effect */
-  animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
-}
+/* Existing keyframes and other styles */
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #64ffda;
-  }
-}
-/* ... other styles ... */
-
-.introText {
-  /* ... existing styles ... */
-}
-
-.highlight {
-  background-color: red;
-  color: white;
-  padding: 0 3px;
-  border-radius: 3px;
-}
-@keyframes vibrate {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-2px); }
-  100% { transform: translateY(0); }
-}
-.vibrate {
-  animation: vibrate 0.3s ease infinite;
-}
-
-@keyframes vibrate {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
-/* Add media query for responsiveness */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .introContent {
     text-align: center;
   }
+
+  .hello {
+    font-size: 1.2rem; /* Adjusted font size for smaller screens */
+  }
+
   .introText {
-    font-size: 1.5rem;
-    line-height: 1.6;
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
   }
+
   .introPara {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
   }
+
   .btn {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
   }
 }
